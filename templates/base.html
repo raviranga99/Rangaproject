@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+
+  <title>Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+
+</head>
+<body>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-default bg-1">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand"><img src="{% static "index.png"%}" class="img-responsive img-circle margin"
+                   style="display:inline" alt="Ranga" width="90" height="90">
+    </div>
+ </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/home/ranga/Desktop/theme.html">
+		  <button type="button" class="btn">Home</button>
+	 </a>
+	</li>
+        <li><a href="/home/ranga/Desktop/news.html"><button type="button" class="btn">News</button></a></li>
+        <li><a href="#"><button type="button" class="btn">SSC</button></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- first Container -->
+<div class="container-fluid text-center">
+ <div class="row">
+
+<!-- first Col -->
+     <div class="col-sm-1 bg-3"></div>
+
+ <!-- second Col -->
+<div class="col-sm-8 bg-3">
+  {% block page %}{% endblock %}
+    <pre>I Know only One thing
+			"Never ever give up"
+    </pre>
+			<b style="color: springgreen">coming soon......</b>
+	</div>
+
+
+<!-- second Col -->
+	  <div class="col-sm-3 bg-3">
+		<a href=""<i class="fa fa-facebook-square" style="font-size:36px;color:blue"></i></a>
+		<a href=""<i class="fa fa-github" style="font-size:36px;color:black"></i></a>
+		<a href=""<i class="fa fa-twitter" style="font-size:36px"></i></a>
+		<a href=""<i class="fa fa-youtube" style="font-size:36px;color:black"></i></a>
+          <div>
+              <img src="{% static "PhotoFunia-de259a_o.jpg"%}" class="img-responsive img-circle margin"
+                   style="display:inline" alt="Ranga" width="350" height="350"></div>
+
+      </div>
+</div>
+ </div>
+</div>
+ <ul class="pager">
+  <li><a href="#">Previous</a></li>
+  <li><a href="#">Next</a></li>
+</ul>
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="">Rv Ranga</a></p>
+</footer>
+
+
+
+
+</body>
+</html>

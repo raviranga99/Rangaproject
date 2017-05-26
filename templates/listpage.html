@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+
+
+{% block page %}
+     {% for p2 in p1 %}
+
+     <table>
+         <tbody>
+          <tr>
+            <td>
+                <img src="{{ p2.img.url }}" class="img-responsive img-img-rounded"
+                    style="display:inline" alt="Ranga" width="600" height="350">
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <a href="{% url "detailpost" id=p2.id %}">
+                    <b>{{ p2.title }}<br></b>
+            </a>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+   {% endfor %}
+{% endblock %}

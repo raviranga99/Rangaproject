@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load markdown_deux_tags %}
+{%block page %}
+
+
+     <table class="table ">
+    <tbody>
+      <tr>
+        <td><img src="{{ p1.img.url }}" class="img-responsive img-img-rounded"
+         style="display:inline" alt="Ranga" width="600" height="350">
+        </td>
+      </tr>
+      <tr>
+        <td><b style=color:green>{{ p1.title }}</b>
+
+        </td>
+      </tr>
+     <tr>
+                <td>
+                    {{ p1.body|markdown}}<br>
+                </td>
+            </tr>
+    </tbody>
+  </table>
+
+{% endblock %}
