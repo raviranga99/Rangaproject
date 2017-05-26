@@ -1,0 +1,4 @@
+django 1.11.1
+django-pagedown
+pillow
+django-markdown-deux
